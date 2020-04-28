@@ -2085,13 +2085,13 @@ pre > span.copy-code:hover {
         margin: 0 auto;
       }
     body {
-      color: #212529;
+      color: #f1f3f5;
     }
     .next-md-body {
-      color: #212529;
+      color: #f1f3f5;
     }
     .next-md-body h1, .next-md-body h2 {
-      border-bottom-color: #212529;
+      border-bottom-color: #f1f3f5;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
       background: #eeeeee54;
@@ -2178,7 +2178,7 @@ pre > span.copy-code:hover {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #868e9654;
+      background-color: #49505754;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
       border-radius: 20px;
