@@ -2085,64 +2085,64 @@ pre > span.copy-code:hover {
         margin: 0 auto;
       }
     body {
-      color: #f8f9fa;
+      color: #222;
     }
     .next-md-body {
-      color: #f8f9fa;
+      color: #222;
     }
     .next-md-body h1, .next-md-body h2 {
-      border-bottom-color: #f8f9fa;
+      border-bottom-color: #222;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #f8f9fa2;
+      background: #f8f9fad8;
     }h1, h2, h3, h4, h5, h6 {
-      color: #f8f9fa;
+      color: #495057;
     }
     
     .archive-timeline-title::before {
-      background-color: #f8f9fa;
+      background-color: #495057;
     }
     
     .post-title-link::before {
-      background-color: #f8f9fa;
+      background-color: #495057;
     }
     
     .node-title::before {
-      background-color: #f8f9fa;
+      background-color: #495057;
     }a {
-      color: #f8f9fa;
+      color: #495057;
     }
     
     .next-md-body a, .friends-box a  {
-      color: #f8f9fa;
-      border-bottom: 1px solid #f8f9fa;
+      color: #495057;
+      border-bottom: 1px solid #495057;
     }a:hover {
-      color: #f8f9fa;
+      color: #343a40;
     }
     
     .archive-timeline-box .tag-node:hover::before {
-      background-color: #f8f9fa;
+      background-color: #343a40;
     }
     
     .markdownIt-TOC a:hover {
-      color: #f8f9fa;
-      border-bottom-color: #f8f9fa;
+      color: #343a40;
+      border-bottom-color: #343a40;
     }
 
     .next-md-body a:hover, .friends-box a:hover {
-      color: #f8f9fa;
-      border-bottom-color: #f8f9fa;
+      color: #343a40;
+      border-bottom-color: #343a40;
     }
       .nav-item a {
-        color:  #f8f9fa;
+        color:  #222;
       }.nav-item a:hover {
-        color: #f8f9fa;
+        color: #343a40;
       }.nav-item-active {
-      background: #f8f9fa2;
+      background: #dee2e6d8;
     }
 
     .nav-item:hover {
-      background: #f8f9fa2;
+      background: #dee2e6d8;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2178,28 +2178,28 @@ pre > span.copy-code:hover {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #f8f9fa2;
+      background-color: #f8f9fad8;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
-      border-radius: 20px;
+      border-radius: 10px;
     }
     .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
-      border-radius: 20px;
+      border-radius: 10px;
     }
       .site-meta {
-        background: #f8f9fa !important;
+        background: #343a40 !important;
       }
       .head-top-line {
-        background: #f8f9fa !important;
+        background: #343a40 !important;
       }
     .brand {
-      background: #f8f9fa2;
+      background: #343a40d8;
     }
     .main-title, .brand {
       color: #f8f9fa !important;
     }
     .mist .site-title i {
-      background: #f8f9fa2;
+      background: #f8f9fad8;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
