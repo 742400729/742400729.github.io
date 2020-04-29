@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="无">
 <meta name="theme-color" content="#000">
-<title>Distance</title>
+<title>单片机学习笔记（1） | Distance</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/742400729/742400729.github.io@master/favicon.ico?v=1588170983406">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/742400729/742400729.github.io@master/styles/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/742400729/742400729.github.io@master/media/css/gemini.css">
@@ -29,6 +29,8 @@
 
 
 
+  <meta name="description" content="单片机学习笔记（1）" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -156,8 +158,24 @@
     <div
       class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/742400729/742400729.github.io@master/images/avatar.png"/>
@@ -223,51 +241,462 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E7%9B%AE%E5%BD%95">目录</a>
+<ul>
+<li><a href="#%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F">微型计算机系统</a>
+<ul>
+<li><a href="#%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F">硬件系统</a>
+<ul>
+<li><a href="#%E7%A1%AC%E4%BB%B6%E7%BB%84%E6%88%90">硬件组成</a></li>
+<li><a href="#%E7%A1%AC%E4%BB%B6%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84">硬件内部结构</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E7%B3%BB%E7%BB%9F">软件系统</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8D%95%E7%89%87%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%95%E7%89%87%E6%9C%BA">单片微型计算机（单片机）</a>
+<ul>
+<li><a href="#%E5%8D%95%E7%89%87%E6%9C%BA%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84">单片机内部结构</a></li>
+<li><a href="#%E5%8D%95%E7%89%87%E6%9C%BA%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F">单片机应用系统</a>
+<ul>
+<li><a href="#%E7%A1%AC%E4%BB%B6">硬件</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6">软件</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E7%89%B9%E7%82%B9">单片机的特点</a></li>
+<li><a href="#%E5%8D%95%E7%89%87%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%BB%93%E6%9E%84">单片机硬件结构</a>
+<ul>
+<li><a href="#8051%E5%8D%95%E7%89%87%E6%9C%BA%E4%BF%A1%E5%8F%B7%E5%BC%95%E8%84%9A%E7%AE%80%E4%BB%8B">8051单片机信号引脚简介</a></li>
+<li><a href="#8051%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%98%E5%82%A8%E7%9A%84%E8%B5%84%E6%BA%90%E5%88%86%E5%B8%83">8051单片机存储的资源分布</a>
+<ul>
+<li><a href="#ram%E4%B8%8Erom">RAM与ROM</a></li>
+<li><a href="#%E7%A8%8B%E5%BA%8F%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E5%86%85%E9%83%A8%E5%88%86%E5%B8%83">程序存储器的内部分布</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
 </div>
+
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
       }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
     });
   }
-  </script>
-        <div class="section-box gemini box-shadow-wrapper">
-          <section class="friends-section bg-color slide-down-in">
-            <div class="firends-box">
-              <h1 class="firends-title" itemprop="name headline">友情链接</h1>
-              
-              
-              
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
             </div>
-            <hr>
-            <div style="text-align:center">
-              <span class="with-love">
-                <i class="fa fa-heart"></i>
-              </span>
-              留言添加友链
-              <span class="with-love">
-                <i class="fa fa-heart"></i>
-              </span>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://742400729.github.io/post/dan-pian-ji-xue-xi-bi-ji-1/">
+      单片机学习笔记（1）
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-04-29</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>5分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>1153<span class="pc-show">字数</span></span>
+    </span>
+    
+    
+    
+    <span id="/post/dan-pian-ji-xue-xi-bi-ji-1/" data-flag-title="单片机学习笔记（1）" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span>浏览量：<span class="leancloud-visitors-count"></span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <h1 id="目录">目录</h1>
+<h2 id="微型计算机系统">微型计算机系统</h2>
+<h3 id="硬件系统">硬件系统</h3>
+<p><strong>硬件系统即构成微机的实体和装置</strong></p>
+<h4 id="硬件组成">硬件组成</h4>
+<p>分为<strong>显示器，主机，键盘，鼠标</strong></p>
+<h4 id="硬件内部结构">硬件内部结构</h4>
+<figure data-type="image" tabindex="1"><img src="https://742400729.github.io/post-images/1588170843395.png" alt="" loading="lazy"></figure>
+<h3 id="软件系统">软件系统</h3>
+<p><strong>即微机系统所使用的各种程序的总称</strong></p>
+<h2 id="单片微型计算机单片机">单片微型计算机（单片机）</h2>
+<p><strong>单片微型计算机是指集成在一个芯片上的微型计算机</strong></p>
+<p>经历了由4位到8位到16位机的发展过程，其中4，8，16指的是总线个数</p>
+<p><strong>单片机实质上就是一个芯片</strong></p>
+<figure data-type="image" tabindex="2"><img src="https://742400729.github.io/post-images/1588170870317.png" alt="" loading="lazy"></figure>
+<h3 id="单片机内部结构">单片机内部结构</h3>
+<figure data-type="image" tabindex="3"><img src="https://742400729.github.io/post-images/1588170882003.png" alt="" loading="lazy"></figure>
+<h3 id="单片机应用系统">单片机应用系统</h3>
+<h4 id="硬件">硬件</h4>
+<p>单片机+接口电路及外设等（硬件是应用系统的基础）</p>
+<p>硬件系统<strong>需要自己设计</strong></p>
+<h4 id="软件">软件</h4>
+<p>在硬件的基础上对其资源进行合理调配和使用</p>
+<h3 id="单片机的特点">单片机的特点</h3>
+<p>嵌入式应用，处于测控系统的核心地位。</p>
+<p>体积小，重量轻，电源单一，功耗低，功能强，价格低，运行速度快，抗干扰能力强，可靠性强</p>
+<p><strong>单片机不能替代微型计算机，单片机只是属于计算机中的一个类型</strong></p>
+<h3 id="单片机硬件结构">单片机硬件结构</h3>
+<figure data-type="image" tabindex="4"><img src="https://742400729.github.io/post-images/1588170894799.png" alt="" loading="lazy"></figure>
+<p><em><strong>8051单片机的基本组成</strong></em></p>
+<p><strong>CPU</strong>：8位，起到运算和控制功能</p>
+<p><strong>内部RAM（随机存取存储器）</strong>：256个RAM单元（每个单元8位）。用户使用前128个单元，用于存放可读写数据，后128个单元被专用寄存器占用。</p>
+<p><strong>内部ROM</strong>：4kb掩膜ROM，存放程序，原始数据和表格。（固定不变的）</p>
+<p><strong>定时计数器</strong>：两个16位的定时计数器，实现定时或计数功能</p>
+<p><strong>并行I/O口</strong>：4个8位的I/O口，P0,P1,P2,P3</p>
+<p><strong>串行口</strong>：一个全双工串行口</p>
+<p><strong>中断控制系统：实时控制</strong>，5个中断源（外中断2个，定时计数中断2个，串行终端1个）</p>
+<p><strong>时钟电路</strong>：分为时序逻辑电路（特点：工作过程必须要有时钟脉冲）和组合逻辑电路，可产生时钟脉冲序列，允许晶振频率6MHZ和12MHZ.</p>
+<h4 id="8051单片机信号引脚简介">8051单片机信号引脚简介</h4>
+<figure data-type="image" tabindex="5"><img src="https://742400729.github.io/post-images/1588170906883.png" alt="" loading="lazy"></figure>
+<ol>
+<li>
+<p><strong>电源线</strong>：VCC（+5V)、VSS(接地线)</p>
+</li>
+<li>
+<p>按<strong>逆时针</strong>规律排列，有<strong>40个引脚</strong></p>
+</li>
+<li>
+<p><strong>振荡电路</strong>：XTAL1、XTAL2，通过电容接在18、19引脚，接晶振</p>
+</li>
+<li>
+<p><strong>复位引脚</strong>：RST，接在9角，使单片机处于初始的复位状态。</p>
+</li>
+<li>
+<p><strong>并行口</strong>：P0,P1,P2,P3</p>
+</li>
+<li>
+<p><strong>EA</strong>:访问<strong>程序存储控制信号</strong>，因为程序存储器可能在单片机内部，也可能在单片机外部，这时候就由这个管脚的<strong>高低电平</strong>来选取内部或者外部的指令。</p>
+</li>
+<li>
+<p><strong>PSEN</strong>：外部ROM读选通信号，当单片机中的CPU需要从外部程序存储器中选取指令时，可以通过这个管脚做一个<strong>选通</strong>的控制信号</p>
+</li>
+<li>
+<p><strong>ALE</strong>：地址锁存控制信号</p>
+</li>
+<li>
+<p><strong>P3口具有第二功能</strong>，<strong>P3 0,P3 1</strong>：既可以作为一般的<strong>输入输出的I/O口的控制端子</strong>，同时可以作为<strong>串行通信的两条线</strong></p>
+<p><strong>P3 2,P3 3</strong>：既可以作为<strong>I/O口的控制端子</strong>，还可以作为<strong>外部中断的请求输入信号</strong></p>
+<p><strong>P3 4,P3 5</strong>：既可以作为<strong>I/O口的控制端子</strong>，也可以作为<strong>定时计数器对外部世界进行计数的输入端子</strong></p>
+<p><strong>P3 6,P3 7</strong>：既可以作为<strong>I/O口的控制端子</strong>，也可以作为<strong>单片机与外部的数据存储器进行数据传输时的选通控制信号</strong></p>
+<h4 id="8051单片机存储的资源分布">8051单片机存储的资源分布</h4>
+<h5 id="ram与rom">RAM与ROM</h5>
+<p>8051包含了片内的ROM（4K）和片内的RAM（256B）</p>
+<p>如果RAM,ROM不够用，可以通过外部添加RAM,ROM的方式来补充</p>
+<p>一般用6264，62代表RAM，64代表8×8容量，有8k的单元，每个单元有八位，最多一般可以扩充64k个单元（因为单片机在扩充外部RAM的时候，一般只能提供16条地址线，而16条地址线可以提供2^16的单元，而这些正好是64k。）</p>
+<h5 id="程序存储器的内部分布">程序存储器的内部分布</h5>
+<p>换成2进制，百0000 0000 0000 0000 ~ 0000 1111 1111 1111，，0000 1111 1111 1111可以度看做0001 0000 0000 0000 0000减去1，即2<sup>知12-1，再道加上开始版的0000H，所以有2</sup>12-1+1=2<sup>12=2</sup>（权2+10）=4K（ps：2^10=1K）</p>
+<p>因为0000H~0FFFH之间所有的数可以用12个bit来区分,即共有2的12次方个数，而1K=2的10次方，因此2的12次方除以2的10次方为2的平方即4，所以就是4K</p>
+</li>
+</ol>
+
             </div>
-            <hr>
-            <div class="friends-note">
-              <p><strong>友链格式：</strong></p>
-              <ul>
-                <li>网站名称：枫糖</li>
-                <li>网站地址：<a href="https://blog.maplesugar.space" data-pjax-state="">https://blog.maplesugar.space</a>
-                </li>
-                <li> 网站描述：From rookie to master</li>
-                <li> 网站 Logo / 头像：<a href="https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg"
-                    data-pjax-state="">https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg</a></li>
-              </ul>
-            </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Distance
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://742400729.github.io/post/dan-pian-ji-xue-xi-bi-ji-1/" title="单片机学习笔记（1）">https://742400729.github.io/post/dan-pian-ji-xue-xi-bi-ji-1/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="test" href="https://742400729.github.io/post/test/">test</a>
+        <a class="nav-mobile-next" title="test" href="https://742400729.github.io/post/test/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
             
   <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
 <div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
@@ -317,7 +746,7 @@
   });
 </script>
 
-          </section>
+          </div>
         </div>
       </div>
     </div>
@@ -533,6 +962,36 @@
   // 代码高亮
   hljs.initHighlightingOnLoad();
 
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
 </script>
   </div>
 </body>
@@ -790,7 +1249,6 @@
 </script> -->
 
 <script src="/media/js/mouse/peace.js"></script>
-
 
 
 </html>
